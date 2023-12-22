@@ -28,3 +28,6 @@ You can also simply download the latest one in the repo
 
 ## Customization
 You can add your own components to `CustomTrackers.txt`, they will be added to the generated files
+
+# Credits
+Thanks to [steveglowplunk](https://xdaforums.com/m/steveglowplunk.6944590/) for creating [this post](https://xdaforums.com/t/script-disable-tracking-services-version-1-8.4099469/) from which I could get custom tracker list and the api url for exodus database
