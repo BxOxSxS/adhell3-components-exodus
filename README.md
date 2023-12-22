@@ -1,5 +1,11 @@
 # adhell3-components-exodus
 Simple python script that generates adhell3 file for components batch operation based on exodus database and a bit from custom one
+
+## Download
+You can download files for batch operation from the repo files or artifact from Actions tab. 
+
+GitHub Action automatically runs update every new month and updates files
+
 ## Usage
 ### Install python
 Follow [official guide](https://wiki.python.org/moin/BeginnersGuide/Download)
@@ -23,8 +29,6 @@ The script will generate 4 files:
 Trackers are obtained from [Exodus Database](https://reports.exodus-privacy.eu.org), specyfically from url https://etip.exodus-privacy.eu.org/trackers/export
 
 There are also merged with `CustomTrackers.txt`
-
-You can also simply download the latest one in the repo
 
 ## Customization
 You can add your own components to `CustomTrackers.txt`, they will be added to the generated files

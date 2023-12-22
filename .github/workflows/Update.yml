@@ -1,0 +1,37 @@
+name: Update
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  Update_files:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +%d.%m.%Y)"
+    - name: Update
+      run: |
+        pip install -r requirements.txt
+        python main.py
+    - name: Archive file
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'adhell3-components-exodus'
+        path: |
+          adhell3_activities.txt
+          adhell3_providers.txt
+          adhell3_receivers.txt
+          adhell3_services.txt
+    - name: Add files and commit
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: github-actions
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: 'Update ${{ steps.date.outputs.date }}'
+        add: '.'
