@@ -3,7 +3,14 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-l', '--lite', action='store_true')
+parser.add_argument('-w', '--whitelist', action='store_true')
 args = parser.parse_args()
+
+if args.whitelist:
+    with open('whitelist.txt') as file:
+        whitelist = file.read().splitlines()
+else:
+    whitelist = []
 
 response = requests.get('https://etip.exodus-privacy.eu.org/trackers/export')
 
@@ -15,7 +22,14 @@ for tracker in data['trackers']:
         continue
     signatures = tracker['code_signature'].split('|')
     for signature in signatures:
-        trackers.append(signature)
+        add = True
+        for w in whitelist:
+            if w == '':
+                continue
+            if signature == w:
+                add = False
+        if add:
+            trackers.append(signature)
 custom = open('CustomTrackers.txt')
 trackers.extend(custom)
 
