@@ -29,12 +29,13 @@ The script will generate 4 files:
  - `adhell3_receivers.txt`
  - `adhell3_services.txt`
 
-Trackers are obtained from [Exodus Database](https://reports.exodus-privacy.eu.org), specyfically from url https://etip.exodus-privacy.eu.org/trackers/export
+Trackers are obtained from [Exodus Database](https://reports.exodus-privacy.eu.org), specifically from url https://etip.exodus-privacy.eu.org/trackers/export
 
 They are also merged with `CustomTrackers.txt`
 
 ## Customization
-You can add your own components to `CustomTrackers.txt`, they will be added to the generated files
+* You can add your own components to `CustomTrackers.txt`, they will be added to the generated files
+* To make "lite" version of components use `-l` or `--lite` argument. This version exclude trackers that have set `is_in_exodus` to `false`. These trackers are not listed in [Exodus Database](https://reports.exodus-privacy.eu.org)
 
 # Credits
 Thanks to [steveglowplunk](https://xdaforums.com/m/steveglowplunk.6944590/) for creating [this post](https://xdaforums.com/t/script-disable-tracking-services-version-1-8.4099469/) from which I could get custom tracker list and the api url for exodus database

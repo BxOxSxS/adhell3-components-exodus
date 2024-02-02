@@ -1,13 +1,19 @@
 import requests
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-l', '--lite', action='store_true')
+args = parser.parse_args()
+
 response = requests.get('https://etip.exodus-privacy.eu.org/trackers/export')
 
 data = response.json()
 
-code_signatures = [tracker['code_signature'] for tracker in data['trackers']]
-
 trackers = []
-for signatures in code_signatures:
-    signatures = signatures.split('|')
+for tracker in data['trackers']:
+    if args.lite and not tracker['is_in_exodus']:
+        continue
+    signatures = tracker['code_signature'].split('|')
     for signature in signatures:
         trackers.append(signature)
 custom = open('CustomTrackers.txt')

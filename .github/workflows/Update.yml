@@ -15,6 +15,14 @@ jobs:
     - name: Get current date
       id: date
       run: echo "::set-output name=date::$(date +%d.%m.%Y)"
+    - name: Update lite
+      run: |
+        pip install -r requirements.txt
+        python main.py --lite
+    - name: Move lite files
+      run: |
+        mkdir lite
+        mv adhell3_* lite/
     - name: Update
       run: |
         pip install -r requirements.txt
@@ -28,6 +36,7 @@ jobs:
           adhell3_providers.txt
           adhell3_receivers.txt
           adhell3_services.txt
+          lite/
     - name: Add files and commit
       uses: EndBug/add-and-commit@v9
       with:
