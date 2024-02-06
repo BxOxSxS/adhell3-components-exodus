@@ -2,7 +2,7 @@
 Simple python script that generates adhell3 file for components batch operation based on exodus database and a bit from custom one
 
 ## Support
-Lists use partial names (starting or ending with), so to make them work, there is a need for [appropriate changes](https://gitlab.com/B.O.S.S/adhell3/-/commit/de5d618e943c940dfed759c27a8c7b0f551c0f54). As for now, they are not in the [official version](https://gitlab.com/fusionjack/adhell3), but they are available on [my fork](https://gitlab.com/B.O.S.S/adhell3)
+Lists use partial names (starting or ending with), so to make them work, there is a need for [appropriate changes](https://gitlab.com/fusionjack/adhell3/-/commit/de5d618e943c940dfed759c27a8c7b0f551c0f54). They are in the [official version](https://gitlab.com/fusionjack/adhell3) since version 3.2.463
 
 ## Download
 You can download files for batch operation from the repo files or artifact from Actions tab. 
