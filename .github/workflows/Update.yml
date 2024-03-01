@@ -21,6 +21,7 @@ jobs:
         python main.py --lite
     - name: Move lite files
       run: |
+        rm -rf lite
         mkdir lite
         mv adhell3_* lite/
     - name: Update
