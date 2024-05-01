@@ -605,7 +605,6 @@ com.nielsen.app
 com.ninjametrics.
 jp.noahapps.sdk.
 com.aiadmobi.sdk.
-
 com.mNewsK.sdk.
 com.offertoro.sdk.
 com.ogury
