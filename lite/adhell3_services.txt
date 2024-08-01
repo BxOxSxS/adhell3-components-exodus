@@ -237,7 +237,7 @@ com.google.firebase.crashlytics
 com.google.firebase.crash.
 io.invertase.firebase.crashlytics.
 
-com.google.firebase.analytics.
+com.google.firebase.analytics.FirebaseAnalytics
 com.google.android.gms.measurement.
 com.google.firebase.firebase_analytics
 com.google.tagmanager
