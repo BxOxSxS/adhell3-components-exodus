@@ -652,6 +652,7 @@ sdk.pendo.io.
 ly.persona.sdk
 
 com.phunware.advertising.
+io.piano.android:analytics
 com.foursquare.pilgrim
 com.foursquare.pilgrimsdk.android
 com.pincrux.
