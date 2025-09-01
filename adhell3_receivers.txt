@@ -722,6 +722,7 @@ com.sailthru
 com.salesforce.marketingcloud
 com.samsung.context.sdk.samsunganalytics.
 com.sec.android.diagmonagent.
+
 com.sayso.ui.
 com.sayso.utils.
 com.scandit.
