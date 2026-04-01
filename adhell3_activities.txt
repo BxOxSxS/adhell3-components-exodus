@@ -196,6 +196,7 @@ com.beaconsinspace.android.beacon.detector.
 com.beemray.
 com.beintoo.nucleon
 io.bidmachine.
+sg.bigo.ads
 ai.bitlabs.sdk.
 com.bitly.Bitly
 com.blesh.sdk.
