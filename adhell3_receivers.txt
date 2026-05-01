@@ -595,6 +595,7 @@ mozilla.telemetry.glean.
 org.mozilla.fenix.GleanMetrics
 org.mozilla.fenix.components.metrics
 com.nativex
+
 com.inn.passivesdk.
 com.inn.feedback.
 com.newrelic.agent.
