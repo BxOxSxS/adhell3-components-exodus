@@ -1,6 +1,8 @@
 # adhell3-components-exodus
 Simple python script that generates adhell3 file for components batch operation based on exodus database and a bit from custom one
 
+![Updated at](https://img.shields.io/badge/01.06.2026%20-%20Green?label=Updated%20at) 
+
 ## Support
 Lists use partial names (starting or ending with), so to make them work, there is a need for [appropriate changes](https://gitlab.com/fusionjack/adhell3/-/commit/de5d618e943c940dfed759c27a8c7b0f551c0f54). They are in the [official version](https://gitlab.com/fusionjack/adhell3) since version 3.2.463
 
